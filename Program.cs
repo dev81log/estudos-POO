@@ -17,9 +17,11 @@ namespace Pagamentos
             PagamentoBoleto.vencimento = DateTime.Now; // atribuindo propriedade 
             PagamentoBoleto.numeroBoleto = "22334455"; // atribuindo propriedade 
 
+
             Console.WriteLine("Endereco: " + Endereco.cep + " " + Endereco.cidade);
             Console.WriteLine("Pagamento Boleto: " + PagamentoBoleto.vencimento.ToString());
             Console.WriteLine("Numero Boleto: " + PagamentoBoleto.numeroBoleto);
+            ;
 
         }
     }
@@ -59,6 +61,14 @@ namespace Pagamentos
 
     }
 
+    // classe
+    public class Endereco
+    {
+        public string cep = "89022-0222";
+        public string cidade = "nova cidade";
+    }
+
+
     // herança
     class PagamentoBoleto : Pagamento
     {
@@ -70,11 +80,6 @@ namespace Pagamentos
         public string numeroCartao;
     }
 
-    public class Endereco
-    {
-        public string cep = "89022-0222";
-        public string cidade = "nova cidade";
-    }
 }
 
 
