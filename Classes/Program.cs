@@ -20,6 +20,9 @@
             }
         }
 
+        
+        
+        
         private static class
             ConfigPayment // classe static nunca vai modificar seu estado, ideal para manter a mesma informação para N usuarios
         {
