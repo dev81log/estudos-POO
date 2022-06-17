@@ -10,7 +10,7 @@
 }
 
 
-class Pessoa : IEquatable<Pessoa> // IEquatable<Pessoa> vindo de generics
+class Pessoa : IEquatable<Pessoa> // IEquatable<Pessoa> vindo de generics Interface
 {
     public Pessoa(int id, string nome) // construtor
     {
@@ -21,7 +21,7 @@ class Pessoa : IEquatable<Pessoa> // IEquatable<Pessoa> vindo de generics
     public int ID { get; set; }
     public string Nome { get; set; }
 
-    public bool Equals(Pessoa pessoa) // props com Equals
+    public bool Equals(Pessoa pessoa) // props com Equals que será implementada da interface IEquatable
     {
         return ID == pessoa.ID; // retorna a comparação 
     }
