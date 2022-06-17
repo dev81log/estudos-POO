@@ -6,6 +6,8 @@ namespace Interfaces
     {
         static void Main(string[] args)
         {
+            var paymentCrediCard = new PaymentCrediCard();
+            var PaymentApplePayment = new PaymentApplePayment();
 
         }
 
